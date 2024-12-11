@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="login-container">
-        <!-- Logo -->
-        <img src="logo.png" alt="Logo" class="logo">
-        
-        <h2>Login</h2>
-        <form id="loginForm" onsubmit="handleSubmit(event)">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
-        
-        <!-- Forgot Password Link -->
-        <a href="#" class="forgot-password">Forgot Password?</a>
-    </div>
-
-    <script src="script.js"></script>
+    <header>
+        <h1>Welcome to the Portal</h1>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <h2>Admin Login</h2>
+                <p>Access the admin portal to manage students, teachers, and courses.</p>
+                <a href="admin-login.html" class="btn">Login as Admin</a>
+            </div>
+            <div class="card">
+                <h2>Student Login</h2>
+                <p>Access the student portal to submit assignments and view grades.</p>
+                <a href="student-login.html" class="btn">Login as Student</a>
+            </div>
+            <div class="card">
+                <h2>Faculty Login</h2>
+                <p>Access the faculty portal to grade assignments and manage student work.</p>
+                <a href="faculty-login.html" class="btn">Login as Faculty</a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
