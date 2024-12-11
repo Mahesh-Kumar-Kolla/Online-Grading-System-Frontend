@@ -3,91 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Home</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Admin Home</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar Navigation -->
-        <nav class="sidebar">
-            <div class="logo-container">
-                <img src="logo.png" alt="Logo" class="sidebar-logo">
-            </div>
-            <h3 class="admin-name">Admin: Mahi</h3>
-            <ul class="nav-links">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Manage Faculty</a></li>
-                <li><a href="#">Manage Students</a></li>
-                <li><a href="#">Manage Grades</a></li>
-                <li><a href="#">Manage Courses</a></li>
+    <header>
+        <h1>Welcome, Admin</h1>
+        <nav>
+            <ul>
+                <li><a href="addstudent.html">Add Student</a></li>
+                <li><a href="addteacher.html">Add Teacher</a></li>
+                <li><a href="addcourse.html">Add Course</a></li>
+                <li><a href="managestudent.html">Manage Students</a></li>
+                <li><a href="manageteacher.html">Manage Teachers</a></li>
+                <li><a href="managecourses.html">Manage Courses</a></li>
+                <li><a href="submitassignment.html">Submit Assignment</a></li>
+                <li><a href="gradeassignment.html">Grade Assignment</a></li>
             </ul>
         </nav>
-
-        <!-- Main Content -->
-        <div class="main-content">
-            <h1>Welcome to the Admin Dashboard</h1>
-            
-            <!-- Statistics Cards -->
-            <div class="stats-container">
-                <div class="stat-card">
-                    <h3>Total Students</h3>
-                    <p>320</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Total Faculty</h3>
-                    <p>45</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Total Courses</h3>
-                    <p>60</p>
-                </div>
-                <div class="stat-card">
-                    <h3>New Enrollments</h3>
-                    <p>15</p>
-                </div>
-            </div>
-
-            <!-- Recent Activity Table -->
-            <h2>Recent Activity</h2>
-            <table class="activity-table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Action</th>
-                        <th>User</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2024-10-01</td>
-                        <td>Added New Student</td>
-                        <td>Admin: Mahi</td>
-                        <td>John Doe (Student)</td>
-                    </tr>
-                    <tr>
-                        <td>2024-09-28</td>
-                        <td>Updated Grades</td>
-                        <td>Faculty: Dr. Smith</td>
-                        <td>Course: Math 101</td>
-                    </tr>
-                    <tr>
-                        <td>2024-09-26</td>
-                        <td>Added New Course</td>
-                        <td>Admin: Mahi</td>
-                        <td>Course: History 202</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <!-- Placeholder for Graphs/Charts -->
-            <h2>Performance Overview</h2>
-            <div class="charts-container">
-                <p>Graphs and charts will be displayed here (e.g., student progress, faculty activity).</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    </header>
+    <main>
+        <p>As an admin, you can manage students, teachers, and courses, as well as grade assignments.</p>
+    </main>
 </body>
 </html>
