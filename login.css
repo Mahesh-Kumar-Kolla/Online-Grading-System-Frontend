@@ -27,13 +27,19 @@ main {
     margin-top: 50px;
 }
 
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
-    margin: 0 auto;
+    width: 250px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
@@ -43,36 +49,28 @@ main {
     margin-bottom: 15px;
 }
 
-.card form {
-    display: flex;
-    flex-direction: column;
+.card p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
 }
 
-.card label {
-    margin: 10px 0 5px;
+.card:hover {
+    transform: translateY(-10px);
 }
 
-.card input {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.card button {
+.card .btn {
     background-color: #333;
     color: white;
-    border: none;
+    text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
     font-weight: bold;
-    cursor: pointer;
 }
 
-.card button:hover {
+.card .btn:hover {
     background-color: #f44336;
 }
 
-.card button:focus {
+.card .btn:focus {
     outline: none;
 }
