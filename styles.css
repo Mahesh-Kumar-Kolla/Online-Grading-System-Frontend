@@ -10,12 +10,12 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     padding: 20px;
-    text-align: center;
 }
 
 header {
     background-color: #333;
     color: #fff;
+    text-align: center;
     padding: 10px;
 }
 
@@ -24,53 +24,74 @@ header h1 {
 }
 
 main {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
+form {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
 }
 
-.card h2 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+form label {
+    display: block;
+    margin: 10px 0 5px;
 }
 
-.card p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card .btn {
+form button {
     background-color: #333;
     color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
-.card .btn:hover {
+form button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+button {
     background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
-.card .btn:focus {
+button:hover {
+    background-color: #e53935;
+}
+
+button:focus {
     outline: none;
 }

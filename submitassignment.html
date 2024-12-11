@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Submit Assignment</title>
+</head>
+<body>
+    <header>
+        <h1>Submit Assignment</h1>
+    </header>
+    <main>
+        <form action="/submit-assignment" method="POST" enctype="multipart/form-data">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="assignmentTitle">Assignment Title:</label>
+            <input type="text" id="assignmentTitle" name="assignmentTitle" required>
+
+            <label for="file">Upload Assignment:</label>
+            <input type="file" id="file" name="file" accept=".pdf,.docx,.txt" required>
+
+            <button type="submit">Submit Assignment</button>
+        </form>
+    </main>
+</body>
+</html>
