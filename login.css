@@ -1,119 +1,78 @@
-/* General Styles */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-}
-
-/* Login Container */
-.login-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
     text-align: center;
-    position: relative;
-    animation: fadeIn 1s ease;
 }
 
-/* Logo */
-.logo {
-    width: 80px; /* Adjust size as needed */
-    margin-bottom: 20px;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
 }
 
-/* Form Heading */
-.login-container h2 {
-    margin-bottom: 20px;
+header h1 {
+    margin: 0;
 }
 
-/* Form Styles */
-form {
+main {
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card form {
     display: flex;
     flex-direction: column;
 }
 
-label {
-    margin-bottom: 5px;
-    text-align: left;
+.card label {
+    margin: 10px 0 5px;
 }
 
-input {
-    margin-bottom: 15px;
+.card input {
     padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    border-radius: 4px;
 }
 
-input:focus {
-    border-color: #007BFF;
-    box-shadow: 0px 2px 5px rgba(0, 123, 255, 0.5);
-    outline: none;
-}
-
-/* Submit Button */
-.submit-btn {
-    padding: 10px;
-    background-color: #007BFF;
+.card button {
+    background-color: #333;
     color: white;
     border: none;
-    border-radius: 50px;
-    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
 }
 
-.submit-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+.card button:hover {
+    background-color: #f44336;
 }
 
-.submit-btn:active {
-    transform: scale(0.98);
-}
-
-/* Forgot Password Link */
-.forgot-password {
-    margin-top: 15px;
-    display: block;
-    color: #FF6F61;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: color 0.3s ease;
-}
-
-.forgot-password:hover {
-    color: #ff4941;
-    text-decoration: underline;
-}
-
-/* Animation for Fade In Effect */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-    .login-container {
-        width: 80%;
-        padding: 20px;
-    }
-
-    .logo {
-        width: 60px;
-    }
+.card button:focus {
+    outline: none;
 }
